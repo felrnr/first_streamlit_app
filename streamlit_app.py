@@ -36,7 +36,7 @@ try:
   
   if fruit_choice:
     back_from_function = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(fruityvice_normalized)
+    streamlit.dataframe(back_from_function)
   else:
     streamlit.error("Please select a fruit to get information.")
 
